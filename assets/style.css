@@ -12,13 +12,6 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXpsog.woff2) format("woff2");
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-html {
-  position: relative;
-  min-width: 1440px;
-  min-height: 800px;
-  height: 100%;
-}
-
 body {
   background-color: hsl(30, 38%, 92%);
 }
@@ -29,7 +22,9 @@ body {
   }
   .block__pub__image_small {
     display: block;
-    border-radius: 5% 0% 0% 5%;
+    width: 345px;
+    height: 245px;
+    border-radius: 5% 5% 0% 0%;
   }
 }
 @media screen and (min-width: 376px) {
@@ -45,27 +40,53 @@ body {
   }
 }
 
-.block__pub {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 175px;
-  margin-bottom: 175px;
-  font-family: "Montserrat";
+@media screen and (max-width: 375px) {
+  .block__pub {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    font-family: "Montserrat";
+  }
+}
+@media screen and (min-width: 376px) {
+  .block__pub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    font-family: "Montserrat";
+  }
 }
 .block__pub__image {
   max-width: 100%;
   height: auto;
   float: left;
 }
-.block__pub__product {
-  text-align: center;
-  width: 300px;
-  height: 450px;
-  background-color: white;
-  border-radius: 0% 5% 5% 0%;
+@media screen and (min-width: 376px) {
+  .block__pub__product {
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 0% 5% 5% 0%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .block__pub__product {
+    text-align: center;
+    width: 345px;
+    height: 370px;
+    background-color: white;
+    border-radius: 0% 0% 5% 5%;
+  }
 }
 .block__pub__product__titre {
   font-weight: 700;
@@ -79,6 +100,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  margin-bottom: 0%;
 }
 .block__pub__product__price_reduce {
   font-weight: 700;
@@ -102,7 +124,7 @@ body {
   font-weight: 500;
 }
 .block__pub button {
-  margin-top: 35px;
+  margin-top: 10%;
   background-color: #433b3b;
   border: none;
   color: white;
