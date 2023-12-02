@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/fraunces/v31/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib1603gg7S2nfgRYIctxuTB_7TtUs.woff2) format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXpsog.woff2) format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 html {
   position: relative;
   min-width: 1440px;
@@ -39,6 +53,7 @@ body {
   align-items: center;
   margin-top: 175px;
   margin-bottom: 175px;
+  font-family: "Montserrat";
 }
 .block__pub__image {
   max-width: 100%;
@@ -51,4 +66,51 @@ body {
   height: 450px;
   background-color: white;
   border-radius: 0% 5% 5% 0%;
+}
+.block__pub__product__titre {
+  font-weight: 700;
+  font-family: "Fraunces";
+  font-style: bold;
+}
+.block__pub__product__price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.block__pub__product__price_reduce {
+  font-weight: 700;
+  font-family: "Fraunces";
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+}
+.block__pub__product__price_rod {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.block__pub h2 {
+  color: hsl(228, 12%, 48%);
+}
+.block__pub p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-align: left;
+  margin: 24px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.block__pub button {
+  margin-top: 35px;
+  background-color: #433b3b;
+  border: none;
+  color: white;
+  padding: 15px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8%;
 }/*# sourceMappingURL=style.css.map */
